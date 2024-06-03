@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Staatliches", sans-serif;
+  box-sizing: border-box;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 368px;
+  background: #535971;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+h1, p {
+  color: #FFFF;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  margin: 18px 0;
+  font-weight: 300;
+}
+
+.page {
+  width: 736px;
+  margin: 0 auto;
+}
+
+header {
+  width: 417px;
+  margin-top: 140px;
+}
+
+form {
+  background: #FFFF;
+  border-radius: 12px 12px 0 0;
+  padding: 64px;
+  color: #535971;
+}
+
+fieldset {
+  border: none;
+}
+
+.fildset-wrapper {
+}
+
+fieldset legend {
+}
+
+.input-wrapper label {
+}
+
+.input-wrapper label span {
+}
+
+.input-wrapper input{
+}
+
+footer {
+}
+
+footer .button {
+}
+
+footer .button:hover {
+}
+
+input:invalid {
+}
