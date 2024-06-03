@@ -5,7 +5,6 @@
 
 body {
   font-family: "Staatliches", sans-serif;
-  box-sizing: border-box;
 }
 
 body::before {
@@ -57,28 +56,78 @@ fieldset {
 }
 
 .fildset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 fieldset legend {
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  border-bottom: 1px solid #E6E6F0;
+  width: 100%;
+  padding-bottom: 16px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .input-wrapper label {
+  font-size: 18px;
+  line-height: 24px;
+  color: #4E4958;
+  margin-bottom: 8px;
 }
 
 .input-wrapper label span {
+  margin-left: 12px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6C6A71;
 }
 
-.input-wrapper input{
+.input-wrapper input {
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  height: 56px;
+  padding: 0 24px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #6C6A71;
 }
 
 footer {
+  background: #535971;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 64px;
+  margin-bottom: 100px;
+  border-top: 1px solid #D6D6D6;
+  border-radius: 0 0 8px 8px;
 }
 
 footer .button {
+  height: 56px;
+  background-color: #FF5374;
+  border: 0;
+  border-radius: 10px;
+  font-family: "Staatliches", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #FFFF;
 }
 
 footer .button:hover {
+  background-color: #af233f;
 }
 
 input:invalid {
+  border: 1px solid #FF1010;
 }
