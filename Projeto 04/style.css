@@ -76,3 +76,35 @@ ul li span {
   letter-spacing: -2px;
   color: #090039;
 }
+
+ul li + li {
+  margin-top: 3.2rem;
+}
+
+/* media queries */
+@media (min-width: 40rem) {
+
+  body {
+    padding: 8rem;
+  }
+
+  main {
+    display: flex;
+    gap: 10rem;
+    max-width: 1020px;
+  }
+
+  main > div {
+    max-width: 484px;
+  }
+
+  ul li {
+    gap: 5.3rem;
+    max-width: 450px;
+    align-items: center;
+  }
+
+  ul li + li {
+    margin-top: 3.2rem;
+  }
+}
