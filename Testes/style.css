@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 450px;
+  margin: 0 auto;
+  padding: 50px;
+  border: 1px solid red;
+}
+
+.input-wrapper, .input-wrapper2 {
+  display: inline-block;
+  flex-direction: column;
+  width: 100px;
+}
+
+.input-wrapper2 {
+  margin-left: 100px;
+}
