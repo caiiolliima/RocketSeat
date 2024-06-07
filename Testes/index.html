@@ -9,15 +9,34 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="input-wrapper">
-    <label for="event-name">Nome</label>
-    <input type="text" name="Nome" id="event-name" required>
-  </div>
-  <div class="input-wrapper2">
-    <label for="event-last-name">Sobrenome</label>
-    <input type="text" name="Sobrenome" id="event-last-name" required>
-  </div>
+<fieldset class="my-page">  
+  <form class="box">
+    <div class="input-wrapper">
+      <input type="Login" id="Login" class="input-field" placeholder="" required maxlength="16">
+    <label for="Login" class="input-label">Login</label>
+    </div>
+    <div class="input-wrapper">
+      <input type="password" id="password" class="input-field" placeholder="" required maxlength="16">
+    <label for="password" class="input-label">Senha</label>
+    </div>
+  </form>
+</fieldset>
+  <fieldset class="my-page">
+  <form class="box">
+    <div class="input-wrapper">
+      <input type="text" id="text" class="input-field" placeholder="" required>
+      <label for="text" class="input-label">Número NFe <span>(Protheus)</span></label>
+    </div>
+  </form>
+  <form class="box">
+    <div class="input-wrapper">
+      <input type="number" id="number" class="input-field" placeholder="" required>
+      <label for="number" class="input-label">Cód Produto <span>(Protheus)</span></label>
+    </div>
+  </form>
+</fieldset>
 </body>
 </html>

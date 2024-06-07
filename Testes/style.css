@@ -1,22 +1,97 @@
+:root {
+  --primeiro: #03DAC6;
+  --segundo: #F8F8F8;
+  --texto: #F8F8F8;
+  --background: #121212;
+  --box-background:#1E1E1E;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  width: 450px;
-  margin: 0 auto;
-  padding: 50px;
-  border: 1px solid red;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  display: flex;
+  background: var(--background);
+  justify-content: center;
+  align-items: center;
 }
 
-.input-wrapper, .input-wrapper2 {
-  display: inline-block;
-  flex-direction: column;
-  width: 100px;
+.my-page {
+  border: none;
+  display: flex;
+  gap: 50px;
+  margin-left: 50px;
 }
 
-.input-wrapper2 {
-  margin-left: 100px;
+.box {
+  background: var(--box-background);
+  padding: 1.5rem;
+  padding-top: 0.75rem;
+  border-radius: 1rem;
+}
+
+.logins {
+}
+
+.input-wrapper {
+  position: relative;
+  padding: 1rem 0 0;
+}
+
+.input-field {
+  border: 0;
+  border-bottom: 2px solid var(--segundo);
+  outline: 0;
+  color: var(--texto);
+  padding: 0.25rem 0px;
+  padding-right: 2rem;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.input-field::placeholder {
+  color: transparent;
+}
+
+.input-field:placeholder-shown~.input-label {
+  font-size: 1rem;
+  cursor: text;
+  color: var(--segundo);
+  top: 1.20rem;  
+}
+
+label, .input-field:focus~.input-label {
+  position: absolute;
+  top: 0;
+  display: block;
+  font-size: 0.875rem;
+  left: -0.0625rem;
+  color: var(--segundo);
+  transition: 0.3s;
+}
+
+.input-field:focus~.input-label {
+  color: var(--primeiro);
+}
+
+.input-field:focus {
+  border-bottom: 2px solid var(--primeiro);
+}
+
+span {
+  color: #a59f9f;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; margin: 0; 
 }
