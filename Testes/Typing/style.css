@@ -1,0 +1,106 @@
+/*body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #293241;
+  color: #FFFF;
+}
+
+.texto {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.texto span {
+  position: relative;
+}
+
+.texto span::before {
+  content: "";
+  animation: shape30 10s ease-in-out;
+}
+
+.texto span::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  border-left: 2px solid #FFFF;
+  right: -10px;
+  animation: cursor 0.8s infinite, digita 10s steps(15) ease-in-out;
+  width: calc(100% + 18px);
+  background: #293241;
+}
+
+@keyframes digita {
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95% {
+    width: 0;
+  }
+
+  5%,20%,25%,40%,45%,60%,65%,80%,85% {
+    width: calc(100% + 18px);
+  }
+}
+
+@keyframes cursor {
+  0% {
+    border-left: 2px solid #293241;
+  }
+}
+
+@keyframes shape30 {
+  0%,100% {
+    content: "Shape30";
+  }
+}*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #293241;
+}
+
+.line {
+  color: #FFFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  margin: 0 auto;
+  border-right: 2px solid #FFFF;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+}
+
+.typing-animation {
+  animation: cursor 500ms steps(100) infinite normal, typing 2s steps(100) 1s normal both;
+}
+
+@keyframes cursor {
+  from {
+    border-right-color: #FFFF;
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 14rem;
+  }
+}
