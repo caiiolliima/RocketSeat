@@ -1,0 +1,37 @@
+body {
+  background: mediumpurple;
+}
+
+.square {
+  width: 4rem;
+  height: 4rem;
+  background-color: #FFFF;
+  opacity: 0.6;
+  /* animation-name: move, blink;
+  animation-duration: 1s, 100ms;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease; */
+  animation: move 1s forwards alternate infinite, blink 100ms infinite;
+}
+
+.square:hover {
+  animation-play-state: paused;
+}
+
+@keyframes move {
+  100% {
+    transform: translateX(calc(100vw - 100% - 16px));
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
