@@ -7,16 +7,19 @@
 }
 
 :root {
+  font-family: 'Mulish', sans-serif;
   font-size: 62.5%;
   --header-bg: #065E7C;
   --input-bg: #3c7b91;
   --text-input: #FFFF;
+  --footer-bg: #387E96;
+  --h1-color: #202024;
+  --p-color:  #121214;
 }
 
 body {
   font-family: 'Mulish', sans-serif;
   font-size: 1.6rem;
-  min-width: 430px;
 }
 
 header {
@@ -52,6 +55,8 @@ header {
   justify-content: center;
   align-items: center;
   gap: 25px;
+  height: 7.2rem;
+  width: 100%;
 }
 
 .avatar {
@@ -82,11 +87,40 @@ header {
   color: var(--text-input);
 }
 
+.main {
+  display: flex;
+  padding: 2.0rem;
+}
+
+.content {
+  padding: 2.0rem;
+}
+
+main > img {
+  width: 80.0rem;
+}
+
+.action > button {
+  border: none;
+  background: #FFF;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.text {
+  color: var(--p-color);
+}
+
+p {
+  margin: 2.0rem 0;
+}
+
 footer {
-  background: var(--header-bg);
+  background: var(--footer-bg);
   color: var(--text-input);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.6rem;
+  height: 6.4rem;
 }
