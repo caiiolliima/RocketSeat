@@ -20,17 +20,17 @@
       <fieldset>
         <div class="fildset-wrapper">
           <legend>Informações Pessoais</legend>
+          <div class="cols-2">
+            <div class="input-wrapper">
+              <label for="event-name">Nome</label>
+              <input type="text" name="Nome" id="event-name" required>
+            </div>
 
-          <div class="input-wrapper">
-            <label for="event-name">Nome</label>
-            <input type="text" name="Nome" id="event-name" required>
+            <div class="input-wrapper">
+              <label for="event-last-name">Sobrenome</label>
+              <input class="input2" type="text" name="Sobrenome" id="event-last-name" required>
+            </div>
           </div>
-
-          <div class="input-wrapper">
-            <label for="event-last-name">Sobrenome</label>
-            <input type="text" name="Sobrenome" id="event-last-name" required>
-          </div>
-
           <div class="input-wrapper">
             <label for="event-mail">E-mail<span>(digite um e-mail válido)</span></label>
             <input type="email" name="Email" id="event-mail" required>
@@ -56,40 +56,44 @@
       <fieldset>
         <div class="fildset-wrapper">
           <legend>Seus horários disponíveis</legend>
-          <div class="input-wrapper">
-            <legend>PRIMEIRA MENTORIA</legend>
-            <label for="event-date">Data<span>(DD/MM/AAAA)</span></label>
-            <input type="date" name="Data" id="event-date" required>
-          </div>
+          <legend>PRIMEIRA MENTORIA</legend>
+            <div class="cols-2">
+              <div class="input-wrapper">
+                <label for="event-date">Data<span>(DD/MM/AAAA)</span></label>
+                <input type="date" name="Data" id="event-date" required>
+              </div>
+              <div class="input-wrapper">
+                <label for="event-time">Das</label>
+                <input type="time" name="Das" id="event-time" required>
+              </div>
 
-          <div class="input-wrapper">
-            <label for="event-time">Das</label>
-            <input type="time" name="Das" id="event-time" required>
-          </div>
-
-          <div class="input-wrapper">
-            <label for="event-time">Até</label>
-            <input type="time" name="Ate" id="event-time" required>
-          </div>
-
-          <div class="input-wrapper">
-            <legend>SEGUNDA MENTORIA</legend>
-            <label for="event-date">Data<span>(DD/MM/AA)</span></label>
-            <input type="date" name="Data" id="event-date" required>
-          </div>
-
-          <div class="input-wrapper">
-            <label for="event-time">Das</label>
-            <input type="time" name="Das" id="event-time" required>
-          </div>
-
-          <div class="input-wrapper">
-            <label for="event-time">Até</label>
-            <input type="time" name="Ate" id="event-time" required>
-          </div>
+              <div class="input-wrapper">
+                <label for="event-time">Até</label>
+                <input type="time" name="Ate" id="event-time" required>
+              </div>
+            </div>
         </div>
-      </fieldset>
+        <fieldset>
+          <div class="fildset-wrapper">
+            <legend>SEGUNDA MENTORIA</legend>
+              <div class="cols-2">
+                <div class="input-wrapper">
+                  <label for="event-date">Data<span>(DD/MM/AA)</span></label>
+                  <input type="date" name="Data" id="event-date" required>
+                </div>
 
+                <div class="input-wrapper">
+                  <label for="event-time">Das</label>
+                  <input type="time" name="Das" id="event-time" required>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="event-time">Até</label>
+                  <input type="time" name="Ate" id="event-time" required>
+                </div>
+              </div>
+          </div>
+        </fieldset>
     </form>
     <footer class="form-buttons">
       <button class="button" form="my-form">Salvar Evento</button> 
