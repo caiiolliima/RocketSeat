@@ -21,7 +21,7 @@
 
 .texto span::before {
   content: "";
-  animation: shape30 10s ease-in-out;
+  animation: shape30 10s ease-in-out infinite;
 }
 
 .texto span::after{
@@ -30,7 +30,7 @@
   height: 100%;
   border-left: 2px solid #FFFF;
   right: -10px;
-  animation: cursor 0.8s infinite, digita 10s steps(15) ease-in-out;
+  animation: cursor 0.8s infinite, digita 10s steps(15) ease-in-out infinite;
   width: calc(100% + 18px);
   background: #293241;
 }
