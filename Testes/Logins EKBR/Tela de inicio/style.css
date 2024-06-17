@@ -1,0 +1,326 @@
+:root {
+    --background: #144196;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+h2 {
+    color: #FFF;
+    margin-top: 100px;
+    font:large;
+    text-align: center;
+}
+
+li {
+    text-decoration:underline;
+}
+
+body {
+    background-color: #EFF9FF;
+    display: flex;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-left: 350px;
+    margin-top: 60px;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1rem;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.menu .menu-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: var(--background);
+    transition: .5s;
+}
+
+.menu:hover .menu-image {
+    transform: translateY(-104px);
+    transition: all .1s;
+}
+
+.menu-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 7rem;
+    padding: 0.75rem 0.875rem;
+    z-index: 1;
+    color: #333;
+    background-color: #fff;
+    text-align: left;
+}
+
+.menu:hover .menu-name {
+    background-color: #fff;
+}
+
+.menu2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-left: 40px;
+    margin-top: 60px;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1rem;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.menu2 .menu2-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: var(--background);
+    transition: .5s;
+}
+
+.menu2:hover .menu2-image {
+    transform: translateY(-104px);
+    transition: all .1s;
+}
+
+.menu2-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 7rem;
+    padding: 0.75rem 0.875rem;
+    z-index: 1;
+    color: #333;
+    background-color: #fff;
+    text-align: left;
+}
+
+.menu2:hover .menu2-name {
+    background-color: #fff;
+}
+
+.menu3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-left: 40px;
+    margin-top: 60px;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1rem;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.menu3 .menu3-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: var(--background);
+    transition: .5s;
+}
+
+.menu3:hover .menu3-image {
+    transform: translateY(-104px);
+    transition: all .1s;
+}
+
+.menu3-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 7rem;
+    padding: 0.75rem 0.875rem;
+    z-index: 1;
+    color: #333;
+    background-color: #fff;
+    text-align: left;
+}
+
+.menu4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-left: -518px;
+    margin-top: 60px;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1rem;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.menu4 .menu4-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: var(--background);
+    transition: .5s;
+}
+
+.menu4:hover .menu4-image {
+    transform: translateY(-104px);
+    transition: all .1s;
+}
+
+.menu4-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 7rem;
+    padding: 0.75rem 0.875rem;
+    z-index: 1;
+    color: #333;
+    background-color: #fff;
+    text-align: left;
+}
+
+.menu4:hover .menu4-name {
+    background-color: #fff;
+}
+
+.menu3:hover .menu3-name {
+    background-color: #fff;
+}
+
+.menu:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 10px 15px var(--secundary-color);
+}
+
+.menu2:hover {
+    transform: scale(1.05);
+    box-shadow:5px 10px 15px var(--secundary-color);
+}
+
+.menu3:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 10px 15px var(--secundary-color);
+}
+
+.menu4:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 10px 15px var(--secundary-color);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 'Red Hat Display', sans-serif;
+}
+
+nav.menu-lateral {
+    width: 80px;
+    height:100%;
+    background-color: #144196;
+    box-shadow: 3px 0 0 920917;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i{
+    color: #FFF;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu {
+    transition: 0.5s;
+}
+
+ul li.ativo {
+    background-color: #575151;
+}
+
+ul li.item-menu:hover {
+    background-color: #575151;
+}
+
+ul li.item-menu a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 70px;
+    transition: 0.8s;
+    opacity: 0;
+
+}
+
+ul li.item-menu a .icon > i {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+nav.menu-lateral.expandir {
+    width: 300px;
+}
+
+nav.menu-lateral.expandir .txt-link {
+    margin-left: 40px;
+    opacity: 1;
+}
