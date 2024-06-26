@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sidebar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-top-wrapper">
+      <div class="sidebar-top">
+        <a href="#" class="logo__wrapper">
+          <img src="./Imagens/MicrosoftTeams-image.png" alt="Logo" class="logo-small">
+          <span class="sidebar-title hide">
+            EKSPHERE
+          </span>
+        </a>
+      </div>
+      <div class="expand-btn">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.00979 2.72L10.3565 7.06667C10.8698 7.58 10.8698 8.42 10.3565 8.93333L6.00979 13.28"
+            stroke="#F4F6F9" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+    </div>
+    <div class="sidebar-links">
+      <ul>
+        <li>
+          <a href="#home" title="Home" class="tooltip">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24"
+              viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
+              <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+              <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
+            </svg>
+            <span class="link hide">Home</span>
+            <span class="tooltip__content">Home</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="sidebar-links bottom-links">
+      <h2>Settings</h2>
+      <ul>
+        <li>
+          <a href="#settings" title="Settings" class="tooltip">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+              stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z">
+              </path>
+              <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+            </svg>
+            <span class="link hide">Settings</span>
+            <span class="tooltip__content">Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="#help" title="Help" class="tooltip">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+              stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+              <path d="M12 16v.01"></path>
+              <path d="M12 13a2 2 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483"></path>
+            </svg>
+            <span class="link hide">Help</span>
+            <span class="tooltip__content">Help</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="divider"></div>
+    <div class="sidebar__profile">
+      <div class="avatar__wrapper">
+        <img class="avatar" src="./Imagens/avatar.jpg" alt="">
+        <div class="online__status"></div>
+      </div>
+      <section class="avatar__name hide">
+        <div class="user-name">Caio Lima</div>
+        <div class="email">caio.lima@elringklinger.com</div>
+      </section>
+      <a href="#logout" class="logout">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout" width="24" height="24"
+          viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"></path>
+          <path d="M9 12h12l-3 -3"></path>
+          <path d="M18 15l3 -3"></path>
+        </svg>
+      </a>
+    </div>
+    </div>
+  </nav>
+  <script src="script.js"></script>
+</body>
+
+</html>
