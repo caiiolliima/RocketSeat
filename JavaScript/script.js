@@ -1,3 +1,4 @@
+/*
 console.log('Bem-vindo ao starter');
 
 //Estrutura de dados: Objeto
@@ -83,3 +84,4 @@ let students = [
 ]
 
 console.log(students);
+*/
