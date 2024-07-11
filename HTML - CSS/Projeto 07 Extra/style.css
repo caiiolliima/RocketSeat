@@ -27,19 +27,23 @@ header {
   background: var(--header-bg);
 }
 
-#page {
-  display: grid;
-  grid-row: auto;
-  max-width: 38.2rem;
-}
-
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
   height: 7.2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 2.2rem;
+}
+
+main > img {
   max-width: 38.2rem;
+  padding-left: 2.2rem;
 }
 
 header nav {
@@ -75,23 +79,10 @@ header nav {
   color: var(--text-input);
 }
 
-.content {
-  max-width: 38.2rem;
-}
-
-.content > img {
-  max-width: 38.2rem;
-}
-
-.container-main {
-  padding: 2.0rem;
-  max-width: 38.2rem;
-}
 
 .action > button {
   border: none;
   background: #FFF;
-  margin-left: 1.0rem;
   margin-top: 1.0rem;
   transition: all 0.5s ease;
 }
@@ -100,10 +91,8 @@ button:hover {
   transform: scale(1.1);
 }
 
-.sidebar {
-  display: block;
-  margin-top: 3.2rem;
-  list-style: none;
+#txt-page {
+  margin: 2.0rem auto 2.0rem;
 }
 
 footer {
