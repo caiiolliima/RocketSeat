@@ -9,7 +9,7 @@
     Type conversion (typecasting) vs Type coersion
 
     *Alteração de um tipo de dado para outro tipo
-
+*/
 //Houve coersão pela linguagem JS, transformando o numeral 5 em string
 console.log('9' + 5)
 
@@ -125,5 +125,3 @@ let techs = ['html', 'css', 'js']
   techs.splice(index, 1)
 
 console.log(techs)
-
-*/
