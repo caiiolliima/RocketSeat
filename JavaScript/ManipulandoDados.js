@@ -33,17 +33,17 @@ let word  = 'Caio'
 
 console.log(word.length)
 
-let number = 123
+let number2 = 123
 
-console.log(number.length)
+console.log(number2.length)
 
-console.log(String(number).length)
+console.log(String(number2).length)
 
 //Transformar um número quebrado com 2 casas decimais e trocar ponto por vírgula
 
-let number = 1254.5321456
+let number3 = 1254.5321456
 
-console.log(number.toFixed(2).replace(".", ","))
+console.log(number3.toFixed(2).replace(".", ","))
 
 
 //Transformar letras minúsculas em maiúsculas. Faça o contrário disso também
@@ -54,7 +54,7 @@ let name2 = 'CAIO'
 
 console.log(name.toUpperCase())
 
-console.log(name.toLowerCase())
+console.log(name2.toLowerCase())
 
 
 
@@ -71,21 +71,21 @@ console.log(phraseWithUnderscore.toLowerCase())
 
 //Verificar se o texto contém a palavra Amor
 
-let phrase = "Eu quero viver Amor!"
+let phrase2 = "Eu quero viver Amor!"
 
-console.log(phrase.includes("Amor"))
+console.log(phrase2.includes("Amor"))
 
 
 
 //Criar um array com construtor
 
-let myArray = new Array('a', 'b', 'c')
+let myArray2 = new Array('a', 'b', 'c')
 
-let myArray2 = new Array(19)
+let myArray3 = new Array(19)
 
-console.log(myArray)
+console.log(myArray2)
 
-console.log(myArray2.length)
+console.log(myArray3.length)
 
 
 //Contar elementos de um array
@@ -98,9 +98,9 @@ console.log(['a', {type: "array"}, function() { return "alo"}][1].type)
 
 //Transformar uma cadeia de caracteres em elementos de um array
 
-let word = 'manipulação'
+let word2 = 'manipulação'
 
-console.log(Array.from(word))
+console.log(Array.from(word2))
 
 
 
