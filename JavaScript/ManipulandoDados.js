@@ -113,13 +113,13 @@ let techs = ['html', 'css', 'js']
 //Adicionar no começo
   techs.unshift('sql')
 //Remover do fim
-  //techs.pop()
+  techs.pop()
 //Remover do começo
-  //techs.shift()
+  techs.shift()
 //Pegar somente alguns elementos do array
-  //console.log(techs.slice(1, 3))
+  console.log(techs.slice(1, 3))
 //Remover 1 ou mais itens em qualquer posição do array
-  //techs.splice(1,1)
+  techs.splice(1,1)
 //Encontrar a posição de um elemento no array
   let index = techs.indexOf('css')
   techs.splice(index, 1)
