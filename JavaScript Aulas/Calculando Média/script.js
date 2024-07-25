@@ -10,7 +10,7 @@ nota03 = Number(nota03)
 const sum = (nota01 + nota02) + nota03
 
 const media = media2()
-
+/*
 function media2() {
 
   const media = ((nota01 + nota02) + nota03) / 3
@@ -19,7 +19,7 @@ function media2() {
   
   return
 }
-
+*/
 
 if (media > 8) {
   
