@@ -17,28 +17,29 @@ export const Label = styled.span`
   transition: all 0.2s ease;
 `;
 
-export const Inputs = styled.input`
+export const TextInput = styled.input`
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
   width: 100%;
-  
+  box-sizing: border-box;
+
   &:focus {
     outline: none;
     border-color: #007bff;
   }
 
-  &::-webkit-calendar-picker-indicator {
-    opacity: 0; /* Remove o ícone do calendário */
-  }
-
-  /* Estilos quando o campo de data tem um valor */
   &:not(:placeholder-shown) + ${Label}, 
   &:focus + ${Label} {
     display: none;
   }
+`;
+
+export const ErrorMessage = styled.span`
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: red;
 `;
