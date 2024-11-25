@@ -4,7 +4,7 @@ def adicionar_contato(contatos, nome_contato, numero_telefone, email):
     #tarefa: nome da tarefa
     #completada: indicar se a tarefa foi completada ou não
 
-    contato = {"Nome": nome_contato, "Telefone": numero_telefone, "E-mail": email, "Favorito": False}
+    contato = {"Nome": nome_contato, "Telefone": numero_telefone, "E-mail": email, "Favorito": False, "Deletado": False}
     
     contatos.append(contato)
 
@@ -88,6 +88,15 @@ def lista_favorito(contatos):
 
     return
 
+def deletar_contato(contatos, indice_contato_ajustado):
+
+    indice_contato_ajustado = int(indice_contato) - 1
+
+    indice_contato_ajustado = int(indice_contato) - 1
+    contatos[indice_contato_ajustado] ["Deletado"] = True
+    contatos.remove(contatos)
+    print(f"Contato {indice_contato} deletado!")
+    return
 
 contatos = []
 
@@ -111,7 +120,7 @@ while True:
     elif escolha == "2":
         ver_contatos(contatos)
 
-    elif escolha =="3":
+    elif escolha == "3":
         ver_contatos(contatos)
         indice_contato = input("Digite o número do contato que deseja atualizar: ")
         novo_contato_atualizado = input("Digite o novo nome do contato: ")
@@ -131,8 +140,15 @@ while True:
             desmarcar_favoritos = input("Digite o contato que deseja desmarcar como favorito: ")
             desmarcar_favorito(contatos, desmarcar_favoritos)
 
-    elif escolha =="5":
+    elif escolha == "5":
         lista_favorito(contatos)
+
+    elif escolha == "6":
+        deletar  = input("Deseja deletar um contato? ") #Sim / Não
+        if marcar_desmarcar == "Sim":
+            ver_contatos(contatos)
+            deletar_contato = input("Digite o contato que deseja marcar como favorito: ")
+            marcar_favorito(contatos, marcar_favoritos)
         
 
     elif escolha == "7":
