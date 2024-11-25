@@ -88,15 +88,18 @@ def lista_favorito(contatos):
 
     return
 
-def deletar_contato(contatos, indice_contato_ajustado):
+def deletar_contato(contatos, indice_contato):
+    
+    if indice_contato.isdigit():
+        indice = int(indice_contato) - 1 
 
-    indice_contato_ajustado = int(indice_contato) - 1
-
-    indice_contato_ajustado = int(indice_contato) - 1
-    contatos[indice_contato_ajustado] ["Deletado"] = True
-    contatos.remove(contatos)
-    print(f"Contato {indice_contato} deletado!")
-    return
+        if 0 <= indice < len(contatos):
+            contato = contatos.pop(indice) 
+            print(f"Contato '{contato['Nome']}' deletado com sucesso!")
+        else:
+            print("Erro: Índice fora do intervalo. Tente novamente.")
+    else:
+        print("Erro: O índice informado deve ser um número.")
 
 contatos = []
 
@@ -144,11 +147,9 @@ while True:
         lista_favorito(contatos)
 
     elif escolha == "6":
-        deletar  = input("Deseja deletar um contato? ") #Sim / Não
-        if marcar_desmarcar == "Sim":
-            ver_contatos(contatos)
-            deletar_contato = input("Digite o contato que deseja marcar como favorito: ")
-            marcar_favorito(contatos, marcar_favoritos)
+        ver_contatos(contatos)
+        indice_contato = input("Digite o número do contato que deseja deletar: ")
+        deletar_contato(contatos, indice_contato)
         
 
     elif escolha == "7":
