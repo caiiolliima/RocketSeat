@@ -150,7 +150,6 @@ while True:
         ver_contatos(contatos)
         indice_contato = input("Digite o número do contato que deseja deletar: ")
         deletar_contato(contatos, indice_contato)
-        
 
     elif escolha == "7":
         break
