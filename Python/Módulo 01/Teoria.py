@@ -306,12 +306,12 @@
 # print(nome1)
 # print(resultado_dobro_cinco)
 
-# print("\n Importação e uso de um módulo de terceiros")
+print("\n Importação e uso de um módulo de terceiros")
 
-# from requests import get
+from requests import get
 
-# url = "https://www.example.com"
+url = "https://www.example.com"
 
-# response = get(url)
+response = get(url)
 
-# print(f"Solicitação HTTPS para a {url} retorno o status: {response.status_code}")
+print(f"Solicitação HTTPS para a {url} retorno o status: {response.status_code}")

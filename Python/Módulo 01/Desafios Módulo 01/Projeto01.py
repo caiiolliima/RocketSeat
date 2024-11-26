@@ -134,11 +134,11 @@ while True:
     
     elif escolha == "4":
         marcar_desmarcar = input("Deseja marcar ou desmarcar um contato como favorito? ") #Marcar / Desmarcar
-        if marcar_desmarcar == "Marcar":
+        if marcar_desmarcar == "marcar":
             ver_contatos(contatos)
             marcar_favoritos = input("Digite o contato que deseja marcar como favorito: ")
             marcar_favorito(contatos, marcar_favoritos)
-        elif marcar_desmarcar == "Desmarcar":
+        elif marcar_desmarcar == "desmarcar":
             ver_contatos(contatos)
             desmarcar_favoritos = input("Digite o contato que deseja desmarcar como favorito: ")
             desmarcar_favorito(contatos, desmarcar_favoritos)
