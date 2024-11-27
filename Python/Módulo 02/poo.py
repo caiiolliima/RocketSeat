@@ -189,46 +189,46 @@
 
 # segunda_funcao()
 
-#Decoradores comum
+# #Decoradores comum
 
-class MinhaClasse:
-    valor = 10
-    def __init__(self, nome) -> None:
-        self.nome = nome
+# class MinhaClasse:
+#     valor = 10
+#     def __init__(self, nome) -> None:
+#         self.nome = nome
 
-    #Metodo requer uma instãncia para ser chamado
-    def metodo_istancia(self):
-        return f"Metodo de instância chamado para {self.valor}"
+#     #Metodo requer uma instãncia para ser chamado
+#     def metodo_istancia(self):
+#         return f"Metodo de instância chamado para {self.valor}"
     
-    @classmethod
-    def metodo_classe(cls):
-        return f"Metodo de classe chamado para valor={cls.valor}"
+#     @classmethod
+#     def metodo_classe(cls):
+#         return f"Metodo de classe chamado para valor={cls.valor}"
     
-    @staticmethod
-    def metodo_estatico():
-        return "Método estático chamado"
+#     @staticmethod
+#     def metodo_estatico():
+#         return "Método estático chamado"
 
-obj = MinhaClasse("Classe Exemplo")
+# obj = MinhaClasse("Classe Exemplo")
 
-print(obj.metodo_istancia())
-print(MinhaClasse.valor)
-print(MinhaClasse.metodo_classe())
-print(MinhaClasse.metodo_estatico())
+# print(obj.metodo_istancia())
+# print(MinhaClasse.valor)
+# print(MinhaClasse.metodo_classe())
+# print(MinhaClasse.metodo_estatico())
 
 
-class Carro:
-    def __init__(self, marca, modelo, ano) -> None:
-            self.marca = marca
-            self.modelo = modelo
-            self.ano = ano
+# class Carro:
+#     def __init__(self, marca, modelo, ano) -> None:
+#             self.marca = marca
+#             self.modelo = modelo
+#             self.ano = ano
     
-    @classmethod
-    def criar_carro(cls, configuracao):
-         marca, modelo, ano = configuracao.split(",")
-         return cls(marca, modelo, int(ano))
+#     @classmethod
+#     def criar_carro(cls, configuracao):
+#          marca, modelo, ano = configuracao.split(",")
+#          return cls(marca, modelo, int(ano))
     
-configuracao1 = "Toyota,Corolla,2024"
+# configuracao1 = "Toyota,Corolla,2024"
 
-carro1 = Carro.criar_carro(configuracao1)
+# carro1 = Carro.criar_carro(configuracao1)
 
-print(F"Marca:{carro1.marca} \nModelo:{carro1.modelo} \nAno:{carro1.ano}")
+# print(F"Marca:{carro1.marca} \nModelo:{carro1.modelo} \nAno:{carro1.ano}")
