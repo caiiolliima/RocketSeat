@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import Metatrader5 as mt5
 
 # Simulação de dados do backtesting com pivot points
 # Considerando performance anterior para calcular resultados em pontos
