@@ -12,16 +12,11 @@ def test_create_task():
     "description": "Descrição da tarefa"
     }
 
-    response = requests.post(f"{BASE_URL}/tasks", json=new_task_data)
-    #assert é usado para validações dentro do response do json
+    response = requests.post(f"{BASE_URL}/tasks", json=new_task_data)    #assert é usado para validações dentro do response do json
     assert response.status_code == 200
-    
     response_json = response.json()
-    
     assert "message" in response_json
-    
     assert "id" in response_json
-    
     tasks.append(response_json['id'])
 
 def test_get_tasks():
