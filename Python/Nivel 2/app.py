@@ -9,7 +9,7 @@ tasks = []
 
 task_id_control = 1
 
-@app.route('/tasks', methods=['POST'])
+@app.route('/asks', methods=['POST'])
 def create_task():
     global task_id_control
     data = request.get_json()

@@ -3,6 +3,7 @@ import requests
 
 #Create
 BASE_URL = 'http://127.0.0.1:5000'
+
 tasks = []
 
 def test_create_task():
@@ -10,6 +11,7 @@ def test_create_task():
     "title": "Nova tarefa",
     "description": "Descrição da tarefa"
     }
+
     response = requests.post(f"{BASE_URL}/tasks", json=new_task_data)
 
     assert response.status_code == 200
