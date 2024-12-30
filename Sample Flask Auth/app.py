@@ -76,7 +76,7 @@ def update_user(id_user):
          user.password = data.get("password")
          db.session.commit()
 
-         return jsonify ({"message": f"Usuário {id_user} cadastrado com sucesso"})
+         return jsonify ({"message": f"Usuário {id_user} alterado com sucesso"})
     
     return jsonify ({"message": "Usuário não encontrado"}), 404
 
