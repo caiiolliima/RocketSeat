@@ -1,18 +1,17 @@
 import { randomUUID } from "node:crypto";
-import { slug } from "./value-objects/slug";
-
+import { Slug } from "./value-objects/slug";
 
 interface QuestionProps {
-  title: string
-  content: string
-  slug: slug
-  authorId: string
+  title: string;
+  content: string;
+  slug: Slug;
+  authorId: string;
 }
 
 export class Question {
   public id: string;
   public title: string;
-  public slug: slug;
+  public slug: Slug;
   public content: string;
   public authorId: string;
 
@@ -22,6 +21,5 @@ export class Question {
     this.slug = props.slug;
     this.authorId = props.authorId;
     this.id = id ?? randomUUID();
-    
   }
 }
