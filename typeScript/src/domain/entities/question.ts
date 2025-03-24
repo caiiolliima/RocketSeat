@@ -1,4 +1,3 @@
-import { randomUUID } from "node:crypto";
 import { Slug } from "./value-objects/slug";
 
 interface QuestionProps {
@@ -20,6 +19,5 @@ export class Question {
     this.content = props.content;
     this.slug = props.slug;
     this.authorId = props.authorId;
-    this.id = id ?? randomUUID();
   }
 }

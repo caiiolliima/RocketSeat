@@ -16,6 +16,5 @@ export class Answer {
         this.content = props.content
         this.authorId = props.authorId
         this.questionId = props.questionId
-        this.id = id ?? randomUUID()
     }
 }
