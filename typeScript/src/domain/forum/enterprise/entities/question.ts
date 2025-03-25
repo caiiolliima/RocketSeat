@@ -1,7 +1,7 @@
 import { Slug } from "./value-objects/slug";
-import { Entity } from "../../core/entities/entity";
-import { UniqueEntityId } from "../../core/entities/unique-entity-id";
-import { Optional } from "../../core/types/optional";
+import { Entity } from "@/core/entities/entity";
+import { UniqueEntityId } from "@/core/entities/unique-entity-id";
+import { Optional } from "@/core/types/optional";
 import dayjs from "dayjs";
 
 interface QuestionProps {
@@ -16,22 +16,22 @@ interface QuestionProps {
 
 export class Question extends Entity<QuestionProps> {
   get authorId() {
-    return this.props.content;
+    return this.props.authorId;
   }
   get bestAnswerId() {
-    return this.props.content;
+    return this.props.bestAnswerId;
   }
   get title() {
-    return this.props.content;
+    return this.props.title;
   }
   get content() {
     return this.props.content;
   }
   get createdAt() {
-    return this.props.content;
+    return this.props.createdAt;
   }
   get updatedAt() {
-    return this.props.content;
+    return this.props.updatedAt;
   }
 
   get isNew(): boolean {
