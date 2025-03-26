@@ -6,7 +6,7 @@ import dayjs from "node_modules/dayjs/index";
 
 interface QuestionProps {
   authorId: UniqueEntityId;
-  bestAnswerId: UniqueEntityId;
+  bestAnswerId?: UniqueEntityId;
   title: string;
   content: string;
   slug: Slug;
