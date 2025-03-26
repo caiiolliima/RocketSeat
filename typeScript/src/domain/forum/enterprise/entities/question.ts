@@ -2,7 +2,7 @@ import { Slug } from "./value-objects/slug";
 import { Entity } from "@/core/entities/entity";
 import { UniqueEntityId } from "@/core/entities/unique-entity-id";
 import { Optional } from "@/core/types/optional";
-import dayjs from "node_modules/dayjs/index";
+import dayjs from "dayjs";
 
 interface QuestionProps {
   authorId: UniqueEntityId;
@@ -32,6 +32,10 @@ export class Question extends Entity<QuestionProps> {
   }
   get updatedAt() {
     return this.props.updatedAt;
+  }
+
+  get slug() {
+    return this.props.slug
   }
 
   get isNew(): boolean {

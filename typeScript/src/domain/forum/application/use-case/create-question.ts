@@ -8,7 +8,9 @@ interface CreateQuestionUseCaseRequest {
     content: string,
 }
 
-interface CreateQuestionUseCaseRequestResponse {}
+interface CreateQuestionUseCaseRequestResponse {
+  question: Question
+}
 
 export class CreateQuestionUseCase {
   constructor(
