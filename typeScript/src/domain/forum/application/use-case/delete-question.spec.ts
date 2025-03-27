@@ -23,8 +23,8 @@ describe("Delete Question By Id", () => {
     await inMemoryQuestionRepository.create(newQuestion);
 
     await sut.execute({
-      questionId: "question-1",
       authorId: "author-1",
+      questionId: "question-1",
     });
 
     expect(inMemoryQuestionRepository.items).toHaveLength(0);
@@ -40,11 +40,11 @@ describe("Delete Question By Id", () => {
 
     await inMemoryQuestionRepository.create(newQuestion);
 
-    await sut.execute({
-      questionId: "question-1",
-      authorId: "author-2",
-    });
-
-    expect(inMemoryQuestionRepository.items).toHaveLength(1);
+    expect(() => {
+      return sut.execute({
+        authorId: "author-2",
+        questionId: "question-1",
+      });
+    }).rejects.toBeInstanceOf(Error);
   });
 });
