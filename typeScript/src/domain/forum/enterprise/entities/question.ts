@@ -56,7 +56,6 @@ export class Question extends Entity<QuestionProps> {
     this.touch();
   }
 
-  
   set content(content: string) {
     this.props.content = content;
     this.touch();
