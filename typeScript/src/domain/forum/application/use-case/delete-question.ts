@@ -11,7 +11,7 @@ export class DeleteQuestionUseCase {
   constructor(
     private questionRepository: QuestionRepository,
   ) {}
-
+  
   async execute({ questionId, authorId }: DeleteQuestionUseCaseRequest) : Promise<DeleteQuestionUseCaseRequestResponse> {
     const question = await this.questionRepository.findById(questionId)
 
