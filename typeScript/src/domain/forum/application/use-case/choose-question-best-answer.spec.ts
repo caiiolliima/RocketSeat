@@ -13,7 +13,7 @@ describe('Choose question best answer', () => {
   beforeEach(() => {
     inMemoryQuestionRepository = new InMemoryQuestionRepository()
     inMemoryAnswerRepository = new InMemoryAnswersRepository()
-    sut = new ChooseQuestionBestAnswerUseCase(inMemoryAnswerRepository, inMemoryQuestionRepository, )
+    sut = new ChooseQuestionBestAnswerUseCase(inMemoryAnswerRepository, inMemoryQuestionRepository)
   })
 
   it("should be able to choose question best answer", async () => {
