@@ -23,12 +23,12 @@ describe('Fetch Question Answers', () => {
         questionId: new UniqueEntityId('question-1')
     }))
     
-    const { answer } = await sut.execute({
+    const result = await sut.execute({
       questionId: 'question-1',
       page: 1,
     })
 
-    expect(answer).toHaveLength(3)
+    expect(result.value?.answer).toHaveLength(3)
   });
 
   it("should be able to fetch paginated question answers", async () => {
@@ -38,12 +38,12 @@ describe('Fetch Question Answers', () => {
         }))
     }
     
-    const { answer } = await sut.execute({
+    const result = await sut.execute({
         questionId: 'question-1',
         page: 2,
     })
 
-    expect(answer).toHaveLength(2)
+    expect(result.value?.answer).toHaveLength(2)
   });
 
 })
