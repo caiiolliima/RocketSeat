@@ -13,7 +13,7 @@ interface ChooseQuestionBestAnswerUseCaseRequestResponse {
 
 export class ChooseQuestionBestAnswerUseCase {
   constructor(
-    private answerRepositoru: AnswerRepository,
+    private answerRepository: AnswerRepository,
     private questionRepository: QuestionRepository
   ) {}
 
@@ -21,7 +21,7 @@ export class ChooseQuestionBestAnswerUseCase {
     authorId,
     answerId,
   }: ChooseQuestionBestAnswerUseCaseRequest): Promise<ChooseQuestionBestAnswerUseCaseRequestResponse> {
-    const answer = await this.answerRepositoru.findById(answerId);
+    const answer = await this.answerRepository.findById(answerId);
 
     if (!answer) {
       throw new Error("Answer not found");
