@@ -6,7 +6,7 @@
 
   // Workbench Config
   "workbench.iconTheme": "material-icon-theme",
-  "window.zoomLevel": 0.8,
+  "window.zoomLevel": 0.6,
   "workbench.colorTheme": "Min Dark",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.list.smoothScrolling": true,
@@ -25,7 +25,7 @@
   "editor.inlineSuggest.enabled": true,
   "editor.fontFamily": "JetBrains Mono",
   "editor.lineHeight": 1.8,
-  "editor.fontSize": 14,
+  "editor.fontSize": 12,
   "editor.fontWeight": "normal",
   "editor.renderLineHighlight": "gutter",
   "editor.fontLigatures": true,
