@@ -2,23 +2,22 @@ import { Entity } from "@/core/entities/entity";
 import { UniqueEntityId } from "@/core/entities/unique-entity-id";
 
 interface AnswerAttachmentProps {
-    answerId: UniqueEntityId
-    attachmentId: UniqueEntityId
+  answerId: UniqueEntityId;
+  attachmentId: UniqueEntityId;
 }
 
 export class AnswerAttachment extends Entity<AnswerAttachmentProps> {
-    get answerId() {
-        return this.props.answerId
-    }
+  get answerId() {
+    return this.props.answerId;
+  }
 
-    get attachmentId() {
-        return this.props.attachment
-    }
+  get attachmentId() {
+    return this.props.attachment;
+  }
 
-    static create(props: AnswerAttachmentProps, id?: UniqueEntityId) {
-        const attachment = new AnswerAttachment(props, id)
+  static create(props: AnswerAttachmentProps, id?: UniqueEntityId) {
+    const attachment = new AnswerAttachment(props, id);
 
-        return attachment
-    }
-
+    return attachment;
+  }
 }
