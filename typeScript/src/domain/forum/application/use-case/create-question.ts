@@ -7,6 +7,7 @@ interface CreateQuestionUseCaseRequest {
   authorId: string;
   title: string;
   content: string;
+  
 }
 
 type CreateQuestionUseCaseRequestResponse = Either<
