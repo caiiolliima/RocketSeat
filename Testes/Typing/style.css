@@ -8,6 +8,7 @@
   align-items: center;
   background-color: #293241;
   color: #FFFF;
+
 }
 
 .texto {
@@ -67,7 +68,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100px;
   background: #293241;
 }
 
