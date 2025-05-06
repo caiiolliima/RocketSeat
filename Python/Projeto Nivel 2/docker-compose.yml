@@ -1,0 +1,15 @@
+services:
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_USER: 'admin'
+      MYSQL_PASSWORD: 'admin132'
+      MYSQL_DATABASE: 'daily-diet'
+      MYSQL_ROOT_PASSWORD: 'admin132'
+    ports:
+      - "3307:3306"
+    expose:
+      - "3307"
+    volumes:
+      - C:\Users\EXT.CAI0000\OneDrive - ElringKlinger AG\Área de Trabalho\RockeSeat\Python\Projeto Nivel 2\mysql:\var\lib\mysql

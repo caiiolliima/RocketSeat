@@ -30,14 +30,16 @@ export class InMemoryQuestionRepository implements QuestionRepository {
   }
   
   async delete(question: Question) {
-    const itemIdenx = this.items.findIndex((item) => item.id === question.id);
+    const itemIndex = this.items.findIndex((item) => item.id === question.id);
     
-    this.items.splice(itemIdenx, 1);
+    this.items.splice(itemIndex, 1);
   }
+
   async save(question: Question) {
     const itemIdenx = this.items.findIndex((item) => item.id === question.id);
     this.items[itemIdenx] = question
   }
+
   async findManyRecent({ page }: PaginationParams) {
     const questions = this.items.sort((a, b) => b.createdAt.getTime() - a.createdAt.getTime()).slice((page - 1) * 20, page * 20)
 
