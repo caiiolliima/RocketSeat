@@ -2,7 +2,7 @@ import { EditAnswerUseCase } from "./edit-answer";
 import { UniqueEntityId } from "@/core/entities/unique-entity-id";
 import { makeAnswers } from "test/factories/make-answers";
 import { InMemoryAnswersRepository } from "test/repositories/in-memory-answers-repository";
-import { NotAllowedError } from "./errors/not-allowed-error";
+import { NotAllowedError } from "@/core/errors/errors/not-allowed-error";
 import { InMemoryAnswerAttachmentRepository } from "test/repositories/in-memory-answers-attachments-repository";
 import { makeAnswerAttachment } from "test/factories/make-answers-attachment";
 
