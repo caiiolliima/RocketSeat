@@ -1,26 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="746ac1bf-4364-4c97-af9a-55a780ab82b1" name="Changes" comment="" />
+    <list default="true" id="746ac1bf-4364-4c97-af9a-55a780ab82b1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Testes/mudancaNome.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/typeScript/node_modules/.vite/results.json" beforeDir="false" afterPath="$PROJECT_DIR$/typeScript/node_modules/.vite/results.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typeScript/src/core/entities/aggregates-root.ts" beforeDir="false" afterPath="$PROJECT_DIR$/typeScript/src/core/entities/aggregates-root.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typeScript/src/core/entities/entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/typeScript/src/core/entities/entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typeScript/src/core/entities/unique-entity-id.ts" beforeDir="false" afterPath="$PROJECT_DIR$/typeScript/src/core/entities/unique-entity-id.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typeScript/src/domain/forum/enterprise/entities/answer-attachment-list.ts" beforeDir="false" afterPath="$PROJECT_DIR$/typeScript/src/domain/forum/enterprise/entities/answer-attachment-list.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typeScript/src/domain/forum/enterprise/entities/question-attachment-list.ts" beforeDir="false" afterPath="$PROJECT_DIR$/typeScript/src/domain/forum/enterprise/entities/question-attachment-list.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2pS6iUdAWkLzXHTl9Q0LjTzoIil" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
