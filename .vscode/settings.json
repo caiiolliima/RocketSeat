@@ -93,4 +93,5 @@
   // Javascript Config
   "javascript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "totvsLanguageServer.welcomePage": false,
 }
