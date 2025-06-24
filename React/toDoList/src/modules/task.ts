@@ -6,7 +6,7 @@ export const TASKS_KEY = "tasks";
 //   Created = "created",
 // }
 //Mantém o código typescript mais robusto e não tem necessidade de desabilitar o "erasableSyntaxOnly"
-export type TaskState = "creating" | "created";
+export type TaskState = "Creating" | "Created";
 
 export interface Task {
   id: string;
