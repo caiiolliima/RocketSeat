@@ -8,9 +8,20 @@ import XIcon from "../assets/icons/X-Regular.svg?react";
 import CheckIcon from "../assets/icons/Check-Regular.svg?react";
 import React from "react";
 import InputText from "../components/input-text";
+import type { Task } from "../modules/task";
+import { cx } from "class-variance-authority";
+import useTask from "../hooks/use-task";
 
-export default function TaskItem() {
-  const [isEditing, setIsEditing] = React.useState(false);
+interface TaskItemProps {
+  task: Task;
+}
+
+export default function TaskItem({ task }: TaskItemProps) {
+  const [isEditing, setIsEditing] = React.useState(task?.state === "Creating");
+
+  const [taskTitle, setTaskTitle] = React.useState("");
+
+  const { updateTask } = useTask();
 
   function handleEditTask() {
     setIsEditing(true);
@@ -20,13 +31,34 @@ export default function TaskItem() {
     setIsEditing(false);
   }
 
+  function handleChangeTaskTitle(event: React.ChangeEvent<HTMLInputElement>) {
+    setTaskTitle(event.target.value || "");
+  }
+
+  function handleSaveTask(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    console.log({ id: task.id, title: taskTitle });
+    updateTask(task.id, { title: taskTitle });
+    setIsEditing(false);
+  }
+
   return (
     <>
-      <Card size={"md"} className="flex items-center gap-4">
+      <Card size={"md"}>
         {!isEditing ? (
-          <>
-            <InputCheckbox />
-            <Text className="flex-1">🚗Fazer compras da semana</Text>
+          <div className="flex items-center gap-4">
+            <InputCheckbox
+              value={task?.concluded?.toString()}
+              checked={task?.concluded}
+            />
+            <Text
+              className={cx("flex-1", {
+                "line-through": task?.concluded,
+              })}
+            >
+              {task?.title}
+            </Text>
+            ''
             <div className="flex gap-1">
               <ButtonIcon icon={TrashIcon} variant={"tertiary"} />
               <ButtonIcon
@@ -35,19 +67,24 @@ export default function TaskItem() {
                 onClick={handleEditTask}
               />
             </div>
-          </>
+          </div>
         ) : (
-          <>
-            <InputText className="flex-1" />
+          <form onSubmit={handleSaveTask} className="flex items-center gap-4">
+            <InputText
+              className="flex-1"
+              onChange={handleChangeTaskTitle}
+              required
+              autoFocus
+            />
             <div className="flex gap-1">
               <ButtonIcon
                 icon={XIcon}
                 variant={"secondary"}
                 onClick={handleExitEditTask}
               />
-              <ButtonIcon icon={CheckIcon} variant={"primary"} />
+              <ButtonIcon type="submit" icon={CheckIcon} variant={"primary"} />
             </div>
-          </>
+          </form>
         )}
       </Card>
     </>
