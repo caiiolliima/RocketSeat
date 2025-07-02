@@ -6,7 +6,7 @@ export default function useTasks() {
 
   return {
     tasks,
-    tasksCount: tasks.length,
+    createdtasksCount: tasks.filter((task) => task.state === "Created").length,
     concludedTasksCount: tasks.filter((task) => task.concluded).length,
   };
 }
