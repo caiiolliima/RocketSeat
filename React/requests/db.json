@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "cai",
+      "name": "Caio"
+    },
+    {
+      "id": "hele",
+      "name": "Helena"
+    },
+    {
+      "id": "gus",
+      "name": "Gustavo"
+    },
+    {
+      "id": "caioL",
+      "name": "Caio Lima"
+    },
+    {
+      "id": "henriqueS",
+      "name": "Henrique Sattolo"
+    },
+    {
+      "id": "AdrianoJ",
+      "name": "Adirnao Junior"
+    }
+  ]
+}
