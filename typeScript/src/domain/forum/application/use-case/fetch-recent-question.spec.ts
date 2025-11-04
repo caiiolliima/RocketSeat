@@ -14,7 +14,7 @@ describe('Fetch Recent Questions', () => {
     sut = new FetchRecentQuestionUseCase(inMemoryQuestionRepositoru)
   })
 
-  it("should be able to fetch recente questions", async () => {
+  it("should be able to fetch recent questions", async () => {
     await inMemoryQuestionRepositoru.create(makeQuestion({ createdAt: new Date(2022, 0, 20)}))
     await inMemoryQuestionRepositoru.create(makeQuestion({ createdAt: new Date(2022, 0, 18)}))
     await inMemoryQuestionRepositoru.create(makeQuestion({ createdAt: new Date(2022, 0, 23)}))
