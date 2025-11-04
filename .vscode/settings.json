@@ -30,7 +30,7 @@
   "editor.renderLineHighlight": "gutter",
   "editor.fontLigatures": true,
   "editor.semanticHighlighting.enabled": false,
-  "editor.minimap.autohide": true,
+  "editor.minimap.autohide": "mouseover",
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
   "editor.rulers": [80, 120],
