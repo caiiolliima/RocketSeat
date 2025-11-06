@@ -7,7 +7,7 @@ export default function TaskesSummary() {
   return (
     <>
       <div className="flex items-center gap-2">
-        <Text variant={"body-sm-bold"} className={"!text-gray-300"}>
+        <Text variant={"body-sm-bold"} className={"!text-white"}>
           Tarefas Criadas
         </Text>
         <Badge variant={"secondary"} loading={isLoadingTasks}>
@@ -15,7 +15,7 @@ export default function TaskesSummary() {
         </Badge>
       </div>
       <div className="flex items-center gap-2">
-        <Text variant={"body-sm-bold"} className={"!text-gray-300"}>
+        <Text variant={"body-sm-bold"} className={"!text-white"}>
           Concluídas
         </Text>
         <Badge variant={"primary"} loading={isLoadingTasks}>
