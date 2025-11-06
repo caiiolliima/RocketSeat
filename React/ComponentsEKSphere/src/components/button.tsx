@@ -8,7 +8,7 @@ export const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary: "bg-gray-200 hover:bg-pink-light",
+        primary: "bg-gray-900 hover:bg-lime-500",
       },
       size: {
         md: "h-14 py-4 px-5",
@@ -47,7 +47,7 @@ export const buttonIconVariants = cva("transition", {
 export const buttonTextVariants = cva("", {
   variants: {
     variant: {
-      primary: "text-gray-400",
+      primary: "text-white",
     },
   },
   defaultVariants: {

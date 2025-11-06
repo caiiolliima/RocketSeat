@@ -6,7 +6,7 @@ export const textVariants = cva("font-sans text-gray-400", {
     variant: {
       "body-sm-bold": "text-sm leading-5 font-semibold",
       "body-md": "text-base leading-6 font-normal",
-      "body-md-bold": "text-base leading-6 font-semibold",
+      "body-md-bold": "text-2xl leading-6 font-bold",
     },
   },
   defaultVariants: {

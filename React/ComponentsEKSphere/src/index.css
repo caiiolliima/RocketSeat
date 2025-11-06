@@ -1,20 +1,36 @@
 @import 'tailwindcss';
 
+@layer base {
+    :root {
+        --ek-bg: oklch(65.991% 0.14816 245.191);
+        --ek-fg: #020202;
+    }
+
+    html, body, #root { height: 100%; }
+
+    body {
+        background: var(--ek-bg);
+        color: var(--ek-fg);
+        font-family: font-roboto;
+    }
+}
+
 @theme {
-    --color-*: initial;
-    --color-white: #ffffff;
-    --color-gray-100: #f7f3f6;
-    --color-gray-200: #f4e6f0;
-    --color-gray-300: #7e6e76;
-    --color-gray-400: #332e32;
-    --color-green-light: #cddfcc;
-    --color-green-base: #52a350;
-    --color-green-dark: #2f5c2d;
-    --color-pink-light: #e9cce1;
-    --color-pink-base: #c257a4;
-    --color-pink-dark: #884074;
+    --color-success-50: oklch(98% 0.018 150);
+    --color-success-100: oklch(95% 0.030 150);
+    --color-success-200: oklch(90% 0.055 150);
+    --color-success-300: oklch(85% 0.085 150);
+    --color-success-400: oklch(78% 0.120 150);
+    --color-success-500: oklch(72% 0.145 150);
+    --color-success-600: oklch(66% 0.145 150);
+    --color-success-700: oklch(59% 0.140 150);
+    --color-success-800: oklch(50% 0.120 150);
+    --color-success-900: oklch(42% 0.100 150);
 
-    --font-sans: "Cairo", sans-serif;
+}
 
-    --shadow-sm: 0px 4px 8px 0px rgba(54, 23, 45, 0.05)
+@layer components {
+    .MuiButton-colorSuccess {
+        @apply inline-flex items-center justify-center font-medium outline-none select-none transition-colors;
+    }
 }
