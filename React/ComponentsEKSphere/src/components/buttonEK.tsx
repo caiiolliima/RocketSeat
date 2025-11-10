@@ -2,56 +2,40 @@ import Button, {
   type ButtonProps as MUIButtonProps,
 } from "@mui/material/Button";
 
-type ColorCustom = {
-  success: "bg-lime-500 text-black hover:bg-gray-400 focus-visible: ring-lime-500";
-};
-
-// export const buttonVariants = cva(
-//   `flex items-center justify-center cursor-pointer transition rounded-lg group gap-2`,
-//   {
-//     variants: {
-//       coloracao: {
-//         sucesso:
-//           "bg-lime-500 text-black hover:bg-gray-400 focus-visible: ring-lime-500",
-//         erros:
-//           "bg-red-600 text-white hover:bg-gray-400 hover:text-black focus-visible:ring-red-600",
-//       },
-//       tamanhos: {
-//         smalls: "px-3 py-1 text-sm",
-//         mediums: "px-4 py-2 text-base",
-//         larges: "px-6 py-3 text-lg",
-//       },
-//     },
-//     defaultVariants: {
-//       coloracao: "sucesso",
-//       tamanhos: "mediums",
-//     },
-//   }
-// );
+type CustomColor = "successCustom";
 
 interface ButtonProps extends Omit<MUIButtonProps, "color"> {
-  color?: MUIButtonProps["color"] | ColorCustom;
+  color?: MUIButtonProps["color"] | CustomColor;
 }
-//     VariantProps<typeof buttonVariants> {
-//   children?: string;
-//   color: MUIButtonProps["color"] | ColorCustom;
-//   className?: string;
-// }
+
+const customColorClasses: Record<CustomColor, string> = {
+  successCustom:
+    "bg-color-success-400 text-black hover:bg-gray-400 focus-visible: ring-lime-500",
+};
 
 export default function ButtonEK({
   children,
-  color,
-  // coloracao = "primary",
-  // tamanhos = "medium",
   className,
-  // ...rest,
+  color,
   ...props
 }: ButtonProps) {
+  const customClass =
+    typeof color === "string" &&
+    (Object.keys(customColorClasses) as string[]).includes(color)
+      ? customColorClasses[color as CustomColor]
+      : "";
+
+  const combinedClassName = [className, customClass].filter(Boolean).join(" ");
+
+  const muiColor = customClass
+    ? undefined
+    : (color as MUIButtonProps["color"] | undefined);
+
   return (
     <Button
       variant="contained"
-      // sizes={tamanhos}
-      className={className}
+      className={combinedClassName}
+      color={muiColor}
       {...props}
     >
       {children}

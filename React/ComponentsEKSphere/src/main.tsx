@@ -9,7 +9,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <StyledEngineProvider enableCssLayer>
+    <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <GlobalStyles styles="@layer theme, base, mui, components, utilities;" />

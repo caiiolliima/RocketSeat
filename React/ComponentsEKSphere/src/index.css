@@ -15,7 +15,8 @@
     }
 }
 
-@theme {
+@layer theme {
+    :root {
     --color-success-50: oklch(98% 0.018 150);
     --color-success-100: oklch(95% 0.030 150);
     --color-success-200: oklch(90% 0.055 150);
@@ -26,6 +27,7 @@
     --color-success-700: oklch(59% 0.140 150);
     --color-success-800: oklch(50% 0.120 150);
     --color-success-900: oklch(42% 0.100 150);
+    }
 
 }
 

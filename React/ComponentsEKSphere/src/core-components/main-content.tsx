@@ -1,6 +1,6 @@
 import { cx } from "class-variance-authority";
 
-interface MainContentProps extends React.ComponentProps<"main"> {}
+type MainContentProps = React.ComponentProps<"main">;
 
 export default function MainContent({
   children,

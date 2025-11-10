@@ -7,12 +7,12 @@ export default function Footer() {
       <footer className="my-5 md:my-10">
         <nav className="flex items-center justify-center gap-4">
           <NavLink to={"/"}>
-            <Text variant={"body-sm-bold"} className="text-white">
+            <Text variant={"body-md-bold"} className="!text-black">
               Tarefas
             </Text>
           </NavLink>
           <NavLink to={"/componentes"}>
-            <Text variant={"body-sm-bold"} className="text-white">
+            <Text variant={"body-md-bold"} className="!text-black">
               Componentes
             </Text>
           </NavLink>
